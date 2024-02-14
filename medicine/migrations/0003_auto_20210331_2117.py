@@ -1,10 +1,7 @@
-
 from django.db import migrations, models
 
 
-class  Migration(migrations.Migration):
-
-
+class Migration(migrations.Migration):
     dependencies = [
         ('medicine', '0002_test'),
     ]

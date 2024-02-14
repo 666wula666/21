@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>中医成就配配配</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="../../static/ttttt/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../static/ttttt/css/game.css">
+
+</head>
+<body>
+<svg width="0" height="0">
+    <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="6"/>
+        <feDisplacementMap in="SourceGraphic" scale="100"/>
+    </filter>
+</svg>
+
+<div class="wrapper">
+    <div class="button _1"><a href="index1.html" style="width: 100%;text-align:center;"> 首页</a>
+        <div class="back"></div>
+    </div>
+    <div class="button _1"><a href="video.html" style="width: 100%;text-align:center;"> 大医精诚</a>
+        <div class="back"></div>
+    </div>
+    <div class="button _1"><a href="test.html" style="width: 100%;text-align:center;"> 挑战</a>
+        <div class="back"></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>中医成就配配配</h1>
+    <!-- <a href="#"><audio src="m1.mp3" loop="loop" controls="controls" autoplay="autoplay" preload="auto" hidden="true"></audio></a> -->
+
+
+    <section class="score-panel">
+        <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="moves">0</span> Moves
+
+        <div class="restart" onClick="run()">
+            <i class="fa fa-repeat"></i>
+        </div>
+
+
+    </section>
+
+    <ul class="deck" id="deck">
+
+    </ul>
+</div>
+
+<script src="../../static/ttttt/js/jquery.min.js"></script>
+<script src="../../static/ttttt/js/game.js"></script>
+
+<div style="text-align:center;clear:both;">
+
+</div>
+
+</body>
+</html>

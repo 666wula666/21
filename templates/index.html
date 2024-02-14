@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>中华扁鹊-首页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+
+    <!-- 引入bootstrap图标库  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
+
+    {#    <link rel="stylesheet" href="/static/ttttt/css/index.css">#}
+    <link rel="stylesheet" href="/static/ttttt/css/font-awesome.min.css">
+    {#    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">#}
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link rel="stylesheet" href="/static/css/add.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="icon" href="/static/add2/yi.ico">
+    <style>
+        body {
+
+            background-image: url(/static/add2/images/tangbg.gif);
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div class="adcenter">
+    <script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script>
+</div>
+
+
+<div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+
+                <div class="site-logo">
+                    <a href="/index" class="text-black"><span class="text-primary">BianQue</span></a>
+                </div>
+
+                <div class="col-12">
+                    <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                            <li><a href="#home-section" class="nav-link">图谱搜索</a></li>
+                            <li><a href="#services-section" class="nav-link">功能列表</a></li>
+
+
+                            {#                            <li>#}
+                            {#                                <a href="#about-section" class="nav-link">推荐词条</a>#}
+                            {##}
+                            {#                            </li>#}
+                            {##}
+                            {#                            <li><a href="#why-us-section" class="nav-link">随便逛逛</a></li>#}
+                            {##}
+                            {#                            <li><a href="#testimonials-section" class="nav-link">用户手册</a></li>#}
+                            {#                            <li><a href="#blog-section" class="nav-link">关于我们</a></li>#}
+                            <li><a href="#contact-section" class="nav-link">联系我们</a></li>
+
+                            {% ifequal 0 session.status %}
+                                <li><a href="/login" class="nav-link">注册/登录</a></li>
+                            {% endifequal %}
+                            {% ifequal 1 session.status %}
+                                <li><a class="nav-link">欢迎！{{ session.username }}</a></li>
+                                <li><a href="/logout" class="nav-link">退出登录</a></li>
+
+                            {% endifequal %}
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+                                                                       class="site-menu-toggle py-5 js-menu-toggle text-black"><span
+                        class="icon-menu h3"></span></a></div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1 overlay"
+             style="background-color:white;!important;background-image: url('/static/images/bck2.jpg')">
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center">
+                    <div class="col-lg-6">
+                        <h1>中医药科普平台</h1>
+                        <p class="mb-5">基于知识图谱图形化地呈现您感兴趣的中医药知识</p>
+                        <form action="/searchresult/" method="post">
+                            {% csrf_token %}
+                            <div class="form-group d-flex">
+                                <input name="a1" type="text" class="form-control" placeholder="输入搜索信息...">
+                                <input type="submit" class="btn btn-primary text-white px-4" value="搜索">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="site-section bg-light" id="services-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7 text-center">
+                    <div class="block-heading-1">
+                        <h2>功能列表</h2>
+                        <p>点击访问我们的更多功能！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-all">
+                <div class="block__35630 text-center" onclick="window.location.href='/qs'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-ferry"></span>
+                    </div>
+                    <h3 class="mb-4">智能问答</h3>
+                    <p>“头痛怎么办？”<br>不如直接来问问我们的智能问答系统吧</p>
+                </div>
+
+                <div class="block__35630 text-center" onclick="window.location.href='/recommend'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-airplane"></span>
+                    </div>
+                    <h3 class="mb-4">词条学习</h3>
+                    <p>看一看您可能感兴趣的<br>食物、药品与病理知识</p>
+                </div>
+
+                <div class="block__35630 text-center" onclick="window.location.href='/passageindex'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-box"></span>
+                    </div>
+                    <h3 class="mb-4">健康百科</h3>
+                    <p>中医知识，养生秘诀<br>这里什么都有</p>
+                </div>
+                <div class="block__35630 text-center" onclick="window.location.href='/vedio'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-warehouse"></span>
+                    </div>
+                    <h3 class="mb-3">大医精诚</h3>
+                    <p>通过影片展示<br>进一步感受我国中医的无穷魅力</p>
+                </div>
+                <div class="block__35630 text-center" onclick="window.location.href='/doctor'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-add"></span>
+                    </div>
+                    <h3 class="mb-3">古今名医</h3>
+                    <p>有哪些古今名医？<br>一睹德名医风采</p>
+                </div>
+                <div class="block__35630 text-center" onclick="window.location.href='/history'">
+                    <div class="icon mb-0">
+                        <span class="flaticon-lorry"></span>
+                    </div>
+                    <h3 class="mb-3">中医发展史</h3>
+                    <p>中医药文化源远流长<br>快来探索中医文化的传承之路！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------
+    MAIN
+    --------------------------------------->
+
+    <div class="container pt-4 pb-4" style="margin-top: 20px">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="font-weight-bold spanborder"><span>中医简史</span></h5>
+                <div class="card border-0 mb-4 box-shadow h-xl-300">
+                    <div onclick="window.location.href='/blogarticle/'"
+                         style="background-image: url('/static/images/his.jpg'); height: 150px;    background-size: cover;    background-repeat: no-repeat;"></div>
+                    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+                        <h2 class="h4 font-weight-bold">
+                            <a class="text-dark" href="/blogarticle/">欲明中医理，先学中医史</a>
+                        </h2>
+                        <p class="card-text">
+                            经过秦汉以前夏、商、周三代的渐萌、诞生、嬗更，度过了春秋战国时期以后，终于在百家争鸣的君主专制体制和儒道互补的社会背景下成熟发展，通过在与人类文明的广泛交流和融合中，最终融为中华文明中最耀眼的大系，影响着世界医学而傲然屹立。</p>
+                        <div>
+                            <small class="d-block"><a class="text-muted" href="/blogarticle/">学习中医历史</a></small>
+                            <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="font-weight-bold spanborder"><span>养生百科</span></h5>
+                <div class="flex-md-row mb-4 box-shadow h-xl-300">
+                    <div class="mb-3 d-flex align-items-center">
+                        <img width="150" src="/static/images/bck2.jpg">
+                        <div class="pl-3">
+                            <h2 class="mb-2 h6 font-weight-bold">
+                                <a class="text-dark" href="javascript:void(0);"
+                                   onclick="document.getElementById('form9').submit()"
+                                   class="text-dark">中医望面部五色分辨病症性质</a>
+                            </h2>
+                            <div class="card-text text-muted small">
+                                望面色是望诊的重要内容之一，是中医师诊察病情的重要方法，具有重要的临床意义。
+
+                            </div>
+                            <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <img width="150" src="/static/images/pa1.jpg">
+                        <div class="pl-3">
+                            <h2 class="mb-2 h6 font-weight-bold">
+                                <a class="text-dark" class="text-dark" href="javascript:void(0);"
+                                   onclick="document.getElementById('form1').submit()">莲子百合的功效与作用</a>
+                            </h2>
+                            <div class="card-text text-muted small">
+                                百合功能主治: 养阴润肺，清心安神。
+                            </div>
+                            <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <img width="150" src="/static/images/pa6.jpg">
+                        <div class="pl-3">
+                            <h2 class="mb-2 h6 font-weight-bold">
+                                <a class="text-dark" href="javascript:void(0);"
+                                   onclick="document.getElementById('form5').submit()">解码正确的“喝药姿势”</a>
+                            </h2>
+                            <div class="card-text text-muted small">
+                                传统的中医理论对口服汤剂的温度非常讲究，光服法就有10多种。
+                            </div>
+                            <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------人物图谱------------------------------------------------------->
+
+
+    <div id='bbbck' style=" background-color:rgba(218, 189, 154,0.2);
+  background-size: cover;
+    opacity: 0.8;">
+        <h1 class="vintage4" style="margin-top: 5px;padding-top:20px ">
+            古今名医</h1>
+        <div class="container-lunbo">
+            <div class="card-box-lunbo">
+                <div class="card-lunbo">
+                    <a href="/doctor/"><img src="/static/ttttt/img/rwimg/rwwwy.jpg" alt=""></a>
+                </div>
+                <div class="card-lunbo">
+                    <a href="/doctor/"><img src="/static/ttttt/img/rwimg/rwlsz.jpg" alt=""></a>
+                </div>
+                <div class="card-lunbo">
+                    <a href="/doctor/"> <img src="/static/ttttt/img/rwimg/rwpq.jpg" alt=""></a>
+                </div>
+                <div class="card-lunbo">
+                    <a href="/doctor/"><img src="/static/ttttt/img/rwimg/rwht.jpg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-------------------------------------------名著------------------------------------------------------->
+
+    {#    <h2 style="text-align: center" class="h2 font-weight-bold">#}
+    {#					<a class="text-dark" href="/blogarticle/">中医名著</a>#}
+    {#	</h2> #}
+
+    <div id="body">
+        <h1 class="vintage4" style="position: absolute;top: 20px">
+            中医名著 </h1>
+        <div class="container-mz">
+            <input type="radio" name='select' id='slide_1' checked hidden>
+            <input type="radio" name='select' id='slide_2' hidden>
+            <input type="radio" name='select' id='slide_3' hidden>
+
+            <div class="slider-mz">
+                <label for="slide_1" class='slide-mz slider-1'></label>
+                <label for="slide_2" class='slide-mz slider-2'></label>
+                <label for="slide_3" class='slide-mz slider-3'></label>
+            </div>
+
+            <div class="card-mz card-1-mz">
+                <div class="img-mz">
+                    <img src="/static/ttttt/img/sj/bcgm.jpg" alt="">
+                </div>
+                <div class="content-mz">
+                    <div class="title-mz">《本草纲目》</div>
+                    <div class="text-mz">
+                        《本草纲目》中国古代药学史上部头最大、内容最丰富的药学巨著。明代李时珍撰成于1578年。它被誉为“东方医药巨典”、“中国古代百科全书”。分为52卷，190多万字，收录了药物1892种，附有药图1100多幅，记载了方剂11096首。
+                        全书卷一卷二为序例，主要介绍历代诸家本草及中药基本理论等内容。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE/15342">查看详情</a>
+                </div>
+            </div>
+            <div class="card-mz card-2-mz">
+                <div class="img-mz">
+                    <img src="/static/ttttt/img/sj/qjf.jpg" alt="">
+                </div>
+                <div class="content-mz">
+                    <div class="title-mz">《千金方》</div>
+                    <div class="text-mz">千金方》（又称《备急千金要方》《千金要方》）是唐朝医药学家孙思邈于永徽三年所著的一部中医学经典著作。
+
+                        全书共30卷，汇集了晋唐以前大量医药学资料。记载了丰富而宝贵的医药学经验与文献资料。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E5%8D%83%E9%87%91%E8%A6%81%E6%96%B9/509576">查看详情</a>
+                </div>
+            </div>
+            <div class="card-mz card-3-mz">
+                <div class="img-mz">
+                    <img src="/static/ttttt/img/sj/shcbl.jpg" alt="">
+                </div>
+                <div class="content-mz">
+                    <div class="title-mz">《伤寒杂病论》</div>
+                    <div class="text-mz">
+                        《伤寒杂病论》是中国传统医学著作之一，是一部论述外感病与内科杂病为主要内容的医学典籍，作者是东汉末年张仲景《伤寒论》共10卷，专门论述伤寒类急性传染病。
+                    </div>
+                    <a href="https://baike.baidu.com/item/%E4%BC%A4%E5%AF%92%E6%9D%82%E7%97%85%E8%AE%BA/1125995">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------人物图谱------------------------------------------------------->
+    <!--form模拟post请求-->
+    {% for passage in passages %}
+        <form method="post" id="form{{ passage.id }}" action="/getpassage/">
+            {% csrf_token %}
+            <input type="hidden" value="{{ passage.id }}" name="passageid">
+        </form>
+    {% endfor %}
+    <div class="container" style="margin-bottom: 80px">
+        <div class="row justify-content-between">
+            <div class="col-md-8">
+                <h5 class="font-weight-bold spanborder"><span>更多资讯</span></h5>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div class="pr-3">
+                        <h2 class="mb-1 h4 font-weight-bold">
+                            <a class="text-dark" href="https://www.gov.cn/xinwen/2022-09/24/content_5711639.htm">让传统医学紧密拥抱现代科技</a>
+                        </h2>
+                        <p>
+                            十年来我国中医药科研创新取得重要进展
+                        </p>
+                        <div class="card-text text-muted small">
+                            来源： 新华社
+                        </div>
+                        <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                    </div>
+                    <img height="130" width="300" src="/static/images/gv1.jpg">
+                </div>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div class="pr-3">
+                        <h2 class="mb-1 h4 font-weight-bold">
+                            <a class="text-dark" href="http://www.qstheory.cn/yaowen/2019-10/25/c_1125152288.htm">习近平对中医药工作作出重要指示强调</a>
+                        </h2>
+                        <p>
+                            传承精华守正创新 为建设健康中国贡献力量
+                        </p>
+                        <div class="card-text text-muted small">
+                            来源：新华网
+                        </div>
+                        <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                    </div>
+                    <img height="130" width="290" src="/static/images/gv2.jpg">
+                </div>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div class="pr-3">
+                        <h2 class="mb-1 h4 font-weight-bold">
+                            <a class="text-dark"
+                               href="https://www.cnta-gov.cn/jigou/808.html">“两岸中医药产业发展论坛”在清华大学举行</a>
+                        </h2>
+                        <p>
+                            12月25日，“两岸中医药产业发展论坛”在清华大学开幕。</p>
+                        <div class="card-text text-muted small">
+                            来源: 中医药信息网
+                        </div>
+                        <small class="text-muted">Dec 12 &middot; 5 min read</small>
+                    </div>
+                    <img width="290" src="/static/images/gv3.jpg">
+                </div>
+            </div>
+
+            <div class="col-md-4 pl-4">
+                <h5 class="font-weight-bold spanborder"><span>大家都在搜 &nbsp;&nbsp;(点击以查看更多)</span></h5>
+                <ol class="list-featured">
+                    <li>
+				<span>
+				<h6 class="font-weight-bold">
+				<a href="javascript:void(0);" onclick="document.getElementById('form2').submit()" class="text-dark">为什么豆浆不宜多喝？</a>
+				</h6>
+				<p class="text-muted">
+					豆浆是属寒性的，比如吃了饭以后消化不好...
+				</p>
+				</span>
+                    </li>
+                    <li>
+				<span>
+				<h6 class="font-weight-bold">
+				<a class="text-dark" href="javascript:void(0);" onclick="document.getElementById('form4').submit()">春季降火吃什么？</a>
+				</h6>
+				<p class="text-muted">
+					春季降火的饮食十分重要，金橘、山楂和梨子...
+				</p>
+				</span>
+                    </li>
+                    <li>
+				<span>
+				<h6 class="font-weight-bold">
+				<a class="text-dark" href="javascript:void(0);" onclick="document.getElementById('form8').submit()">三七粉、西洋参粉可以一起冲着喝吗？</a>
+				</h6>
+				<p class="text-muted">
+					长期服用三七粉易导致津液耗伤，可能造成阴虚之证...
+				</p>
+				</span>
+                    </li>
+                    <li>
+				<span>
+				<h6 class="font-weight-bold">
+				<a class="text-dark" href="javascript:void(0);" onclick="document.getElementById('form3').submit()">喝骨头汤有什么好处？</a>
+				</h6>
+				<p class="text-muted">
+					骨头汤、排骨汤等含有丰富的卵磷脂、类粘蛋白和骨胶原...
+				</p>
+				</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    {#    联系我们#}
+    {#    <div class="site-section bg-light" id="contact-section">#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">#}
+    {#                    <div class="block-heading-1">#}
+    {#                        <h2>联系我</h2>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="row justify-content-center">#}
+    {#                <div class="col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="100">#}
+    {#                    <form action="/sendemail/" method="post">#}
+    {#                        {% csrf_token %}#}
+    {#                        <div class="form-group row">#}
+    {#                            <div class="col-md-6 mb-4 mb-lg-0">#}
+    {#                                <input type="text" class="form-control" placeholder="昵称">#}
+    {#                            </div>#}
+    {#                            <div class="col-md-6">#}
+    {#                                <input type="text" class="form-control" placeholder="单位">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {##}
+    {#                        <div class="form-group row">#}
+    {#                            <div class="col-md-12">#}
+    {#                                <input type="text" name='a1' class="form-control" placeholder="电子邮件">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {##}
+    {#                        <div class="form-group row">#}
+    {#                            <div class="col-md-12">#}
+    {#                                <textarea name="" id="" class="form-control" placeholder="给我的留言填写在这里..." cols="30"#}
+    {#                                          rows="10"></textarea>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="form-group row">#}
+    {#                            <div class="col-md-6 mr-auto">#}
+    {#                                <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5"#}
+    {#                                       value="提交留言">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        {% if messages %}#}
+    {#                            <script>#}
+    {#                                {% for msg in messages %}#}
+    {#                                    alert('{{ msg.message }}');#}
+    {#                                {% endfor %}#}
+    {#                            </script>#}
+    {#                        {% endif %}#}
+    {#                    </form>#}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+    <!-- 联系我 start -->
+    <div class="container-fluid py-5 bg-light" id="contact-section">
+        <div class="container">
+            <h3 id="lx " style="color: black!important;">
+                联系我<span class=" fw-lighter">Call</span>
+            </h3>
+            <p class=" fw-lighter mt-3 mb-5">
+                我知道你一定有很多话想跟我说，无论是关于此项目，还是其他方面的，只要你有问题，就可以发送给我，我会尽可能与你联系。
+            </p>
+            <div class="row">
+                <div class="col-12 col-md-5 order-2 order-md-0 mt-4 mt-md-0">
+                    <div class=" d-none d-md-block">
+                        <h5 style="color: black!important;">发一封邮件试试</h5>
+                        <span class=" fw-lighter">今天第一次刚认识我？没关系，我们已经是朋友了。发个邮件让我知道你来过了。</span>
+                    </div>
+                    <h5 class="mt-4 mt-md-5" style="color: black!important;">联系方式</h5>
+                    <b class="mb-5" style="color: black!important;">Email:</b>
+                    <span style="color: black!important;">3233005441@qq.com</span><br>
+                    <b style="color: black!important;">Phone:</b>
+                    <span style="color: black!important;">18861987512</span><br>
+                    <b style="color: black!important;">QQ:</b>
+                    <span style="color: black!important;">3233005441</span><br>
+                    <b style="color: black!important;">微信:</b>
+                    <span style="color: black!important;">18861987512</span>
+                    <h5 style="color: black!important;" class="mt-4">联系地址</h5>
+                    <b style="color: black!important;">Office:</b>
+                    <span style="color: black!important;">江苏省镇江市江苏大学</span>
+                </div>
+                <div class="col-md-7 col-12 border shadow">
+                    <form>
+                        <div class="row p-5">
+                            <div class="col-12 d-block d-md-none mb-4">
+                                <h5>发一封邮件试试</h5>
+                                <span class=" fw-lighter">今天第一次刚认识我？没关系，我们已经是朋友了。发个邮件让我知道你来过了。</span>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label class=" form-label fw-lighter" for="firstNameIput">First Name<span
+                                        class=" text-danger">*</span></label>
+                                <input type="text" required class="form-control" id="firstNameIput"
+                                       placeholder="First Name"/>
+                                <label class=" form-label fw-lighter mt-4" for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email"/>
+                            </div>
+                            <div class="col-md-6 col-12 mt-4 mt-md-0">
+                                <label class=" form-label fw-lighter" for="lastNameIput">Last Name<span
+                                        class=" text-danger">*</span></label>
+                                <input type="text" required class="form-control" id="lastNameIput"
+                                       placeholder="Last Name"/>
+                                <label class=" form-label fw-lighter mt-4" for="phoneIput">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phoneIput" placeholder="Last Name"/>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <label class=" form-label fw-lighter" for="msgIput">Message<span
+                                        class=" text-danger">*</span></label>
+                                <textarea class=" form-control" required id="msgIput"></textarea>
+                                <button class="btn btn-dark mt-4 send" type="submit">发送邮件</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alertAll d-none">
+        <div class="alertNode d-block d-md-none">
+            <div class="alert alert-light m-0 p-0 alertNodeContent position-absolute translate-middle top-50 start-50 p-md-5 p-3  fade show alert-dismissible pb-md-3 pb-2 w-75">
+                <h3 class=" lh-base mb-0 fs-5 p-2 text-center">我已收到您宝贵的建议，非常感谢！</h3>
+                <hr class=" m-md-3 m-2 mt-3 mt-md-5">
+                <div class="row">
+                    <div class="col-6 border-end border-secondary good">
+                        <div class=" text-center fs-5 my-0">好的</div>
+                    </div>
+                    <div class="col-6 cancel">
+                        <div class=" text-center fs-5 my-0">取消</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alertNode d-none d-md-block">
+            <div class="alert alert-dark m-0 p-0 alertNodeContent position-absolute translate-middle top-50 start-50 p-md-5 p-3  fade show alert-dismissible">
+                <button class=" btn-close d-none d-md-block" data-bs-dismiss="alert"></button>
+                <h3 class=" lh-base mb-0">我已收到您宝贵的建议，非常感谢！</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 联系我 end -->
+
+
+    {#底部黑块#}
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="footer-heading mb-4">关于我</h2>
+                            <p>
+                                我是来自江苏大学的张文洋。如有需要，可以通过上边的“联系我”或者直接向3233005441@qq.com给我发送邮件哦！</p>
+                        </div>
+                        <div class="col-md-4 ml-auto">
+                            <h2 class="footer-heading mb-4">友情链接</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">中华扁鹊网</a></li>
+                                <li><a href="https://www.zhzyw.com/">中医中药网</a></li>
+                                <li><a href="https://www.cacm.org.cn/">中华中医药协会</a></li>
+                                <li><a href="https://zhongyigen.com/#">中医智库网</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 ml-auto">
+
+                    <form action="/subscribe/" method="post" class="footer-suscribe-form">
+                        {% csrf_token %}
+                        <div class="mb-5">
+                            <h2 class="footer-heading mb-4">订阅我的更新！</h2>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                       placeholder="输入电子邮箱..." aria-label="Enter Email"
+                                       aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary text-white" type="submit" id="button-addon2">
+                                        订阅
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            <!-- Link back to cssmoban can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; 2024/2/6 JSU
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/jquery.waypoints.min.js"></script>
+<script src="/static/js/jquery.animateNumber.min.js"></script>
+<script src="/static/js/jquery.fancybox.min.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
+<script src="/static/js/aos.js"></script>
+
+<script src="/static/js/main.js"></script>
+
+
+</body>
+
+</html>

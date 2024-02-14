@@ -1,0 +1,439 @@
+#this-li {
+    font-size: 35px;
+}
+
+#this-li a {
+    color: #b01d23;
+}
+
+#this-li a:hover {
+    color: #483533;
+}
+
+.container {
+    height: 650px;
+    position: relative;
+}
+
+.container .Medicine {
+    height: 600px;
+    width: 1050px;
+    position: absolute;
+    top: 25px;
+    left: 245px;
+}
+
+.row {
+    height: 150px;
+    width: 1050px;
+}
+
+.row ul li {
+    float: left;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(214, 215, 208, 0.5);
+    border: 1px solid white;
+}
+
+.title {
+    height: 250px;
+    position: relative;
+}
+
+.title1 {
+    height: 150px;
+    position: relative;
+}
+
+.title-text {
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
+
+.title-text h2 {
+    font-size: 50px;
+    color: #817c7c;
+    border-left: 5px solid red;
+}
+
+.title-img {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+
+.title-img ul li {
+    float: left;
+    margin-left: 50px;
+}
+
+.title-img ul li:hover img {
+    height: 160px;
+    width: 160px;
+}
+
+.title-sort {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    border-left: 5px solid #cd0200;
+}
+
+.title-sort h3 {
+    font-size: 30px;
+    color: #b01d23;
+    position: absolute;
+    top: 33px;
+    left: 14px;
+}
+
+.title-sort h4 {
+    font-size: 20px;
+    color: #b01d23;
+    position: absolute;
+    top: 68px;
+    left: 24px;
+}
+
+.MiMaru {
+    height: 800px;
+    position: relative;
+}
+
+.MM-class {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.MM-text1 {
+    height: 470px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 590px;
+}
+
+.MM-text1 h3 {
+    float: right;
+    color: #cd0200;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid #cd0200;
+}
+
+.MM-text1 h4 {
+    float: right;
+    color: #000;
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid black;
+}
+
+.MM-img1 img {
+    height: 600px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 170px;
+}
+
+.MM-img1 h3 {
+    font-size: 30px;
+    color: #000;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+    position: absolute;
+    top: 184px;
+    right: 214px;
+}
+
+.MM-text2 h3 {
+    width: 710px;
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 700px;
+}
+
+.MM-img2 img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 780px;
+}
+
+/**/
+.fj-class {
+    height: 100px;
+    position: relative;
+}
+
+/**/
+.Dispersions {
+    height: 800px;
+    position: relative;
+}
+
+.DS-class {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.DS-text1 {
+    height: 470px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 590px;
+}
+
+.DS-text1 h3 {
+    float: left;
+    color: #cd0200;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid red;
+}
+
+.DS-text1 h4 {
+    float: left;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid red;
+}
+
+.DS-img1 img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 81px;
+}
+
+.DS-text2 h3 {
+    width: 400px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 1019px;
+}
+
+.DS-img2 img {
+    height: 500px;
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 601px;
+}
+
+/**/
+.Salve {
+    height: 800px;
+    position: relative;
+}
+
+.SL-class {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.SL-text1 {
+    height: 470px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 590px;
+}
+
+.SL-text1 h3 {
+    float: right;
+    color: #cd0200;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid #cd0200;
+}
+
+.SL-text1 h4 {
+    float: right;
+    color: #000;
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.SL-img1 img {
+    height: 800px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 81px;
+}
+
+.SL-text2 h3 {
+    width: 400px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 139px;
+    left: 915px;
+}
+
+.SL-img2 img {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 601px;
+}
+
+/**/
+
+.Medicinal-wine {
+    height: 800px;
+    position: relative;
+}
+
+.MW-class {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.MW-text1 {
+    height: 470px;
+    width: 400px;
+    position: absolute;
+    top: 36px;
+    right: 155px;
+}
+
+.MW-text1 h3 {
+    float: right;
+    color: #cd0200;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid #cd0200;
+}
+
+.MW-text1 h4 {
+    float: right;
+    color: #000;
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.MW-img1 img {
+    height: 800px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 138px;
+}
+
+/**/
+.Medicinal-diet {
+    height: 800px;
+    position: relative;
+}
+
+.MD-class {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.MD-text1 {
+    height: 470px;
+    width: 400px;
+    position: absolute;
+    top: 63px;
+    right: 125px;
+}
+
+.MD-text1 h3 {
+    float: left;
+    color: #cd0200;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid #cd0200;
+}
+
+.MD-text1 h4 {
+    float: left;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid #cd0200;
+}
+
+.MD-img1 img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: 597px;
+}
+
+.MD-text2 h3 {
+    width: 900px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 25px;
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+}
+
+.MD-img2 img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    bottom: 176px;
+    right: 37px;
+}

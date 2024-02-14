@@ -1,10 +1,10 @@
-*{
+* {
     /* 初始化 */
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     /* 100%的窗口高度 */
     height: 100vh;
     /* 弹性布局 水平+垂直居中 */
@@ -18,7 +18,7 @@ body{
     background-size: cover;
 }
 
-.container{
+.container {
     background-color: #fff;
     width: 650px;
     height: 415px;
@@ -27,38 +27,40 @@ body{
     /* 相对定位 */
     position: relative;
 }
-.from-box{
+
+.from-box {
     /* 绝对定位 */
     position: absolute;
     top: -10%;
     left: 5%;
-    background-color:#A67C58;
+    background-color: #A67C58;
     width: 320px;
     height: 500px;
     border-radius: 5px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-     /* 弹性布局 水平+垂直居中 */
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     z-index: 2;
-     /* 动画过渡 加速之后 减速 */
-     transition: 0.5s ease-in-out;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    /* 动画过渡 加速之后 减速 */
+    transition: 0.5s ease-in-out;
 }
 
-.register-box,.login-box{
+.register-box, .login-box {
     /* 弹性布局 垂直排列 */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.hidden{
+
+.hidden {
     display: none;
     transition: 0.5s;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 25px;
     /* 大写字母 */
@@ -68,7 +70,7 @@ h1{
     letter-spacing: 5px;
 }
 
-input{
+input {
     background-color: transparent;
     width: 70%;
     color: #fff;
@@ -79,106 +81,112 @@ input{
     text-indent: 10px;
     margin: 8px 0;
     font-size: 14px;
-    /* 字间距 */    
+    /* 字间距 */
     letter-spacing: 2px;
 }
-input::placeholder{
+
+input::placeholder {
     color: #fff;
 }
 
-input:focus{
+input:focus {
     color: #fff;
     outline: none;
     border-bottom: 1px solid #1B57A680;
     transition: 0.5s;
 }
-input:focus::placeholder{
+
+input:focus::placeholder {
     opacity: 0;
 }
+
 /*提示框*/
 input[type="text"] + label + span,
-input[name="password2"] + label + span ,
-input[type="email"] + label + span{
-  display: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
-  margin-top: 0px;
-  padding: 0 10px;
-  height: 32px;
-  color: white;
-  background: #F29D52;
-  border: 0;
-  font: 14px Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-  line-height: 32px;
-  white-space: nowrap;
+input[name="password2"] + label + span,
+input[type="email"] + label + span {
+    display: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    margin-top: 0px;
+    padding: 0 10px;
+    height: 32px;
+    color: white;
+    background: #F29D52;
+    border: 0;
+    font: 14px Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    line-height: 32px;
+    white-space: nowrap;
 }
-input[type="text"] + label + span
-  {
 
-  position: absolute;
-  left: 234px;
-  top:150px;
-  
+input[type="text"] + label + span {
+
+    position: absolute;
+    left: 234px;
+    top: 150px;
+
 }
 
 input[name="password2"] + label + span {
-   position: absolute;
-   left: 234px;
-   top:250px;
+    position: absolute;
+    left: 234px;
+    top: 250px;
 }
-input[type="email"] + label + span  {
-   position: absolute;
-  left: 234px;
-  top:200px;
+
+input[type="email"] + label + span {
+    position: absolute;
+    left: 234px;
+    top: 200px;
 }
+
 input[type="text"] + label + span:before,
 input[name="password2"] + label + span:before,
-input[name="repass"] + label + span:before, 
+input[name="repass"] + label + span:before,
 input[type="email"] + label + span:before {
-  width: 0;
-  height: 0;
-  left: -8px;
-  top: 12px;
-  content: '';
-  position: absolute;
-  border-top: 4px solid transparent;
-  border-right: 8px solid #F29D52;
-  border-bottom: 4px solid transparent;
+    width: 0;
+    height: 0;
+    left: -8px;
+    top: 12px;
+    content: '';
+    position: absolute;
+    border-top: 4px solid transparent;
+    border-right: 8px solid #F29D52;
+    border-bottom: 4px solid transparent;
 }
+
 input[type="text"]:invalid,
 input[name="password2"]:invalid,
 input[name="repass"]:invalid,
 input[type="email"]:invalid {
-  display: block;
-  box-shadow: none;
-  outline: none;
+    display: block;
+    box-shadow: none;
+    outline: none;
 }
 
 
-.from-box button{
+.from-box button {
     width: 70%;
     margin-top: 35px;
     background-color: #f6f6f6;
     outline: none;
     border-radius: 8px;
     padding: 13px;
-    color:  #A67C58;
+    color: #A67C58;
     letter-spacing: 2px;
     border: none;
     cursor: pointer;
 }
 
-.from-box button:hover{
+.from-box button:hover {
     background-color: #A67C58;
     color: #f6f6f6;
     transition: background-color 0.5s ease;
 }
 
-.con-box{
+.con-box {
     width: 50%;
     /* 弹性布局 垂直排列 居中 */
     display: flex;
@@ -191,15 +199,15 @@ input[type="email"]:invalid {
     transform: translateY(-50%);
 }
 
-.con-box.left{
+.con-box.left {
     left: -2%;
 }
 
-.con-box.right{
+.con-box.right {
     right: -2%;
 }
 
-.con-box h2{
+.con-box h2 {
     color: #8e9aaf;
     font-size: 25px;
     font-weight: bold;
@@ -208,24 +216,25 @@ input[type="email"]:invalid {
     margin-bottom: 4px;
 }
 
-.con-box p{
+.con-box p {
     font-size: 12px;
     letter-spacing: 2px;
     color: #8e9aaf;
     text-align: center;
 }
-.con-box span{
+
+.con-box span {
     color: #A67C58;
 }
 
-.con-box img{
+.con-box img {
     width: 200px;
     height: 200px;
     opacity: 0.9;
     margin: 20px 0;
 }
 
-.con-box button{
+.con-box button {
     margin-top: 3%;
     background-color: #fff;
     color: #A67C58;
@@ -236,7 +245,8 @@ input[type="email"]:invalid {
     /* 鼠标放上变小手 */
     cursor: pointer;
 }
-.con-box button:hover{
+
+.con-box button:hover {
     background-color: #A67C58;
     color: #f6f6f6;
 }

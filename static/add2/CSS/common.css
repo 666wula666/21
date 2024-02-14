@@ -1,0 +1,139 @@
+/*初始化*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    -webkit-text-size-adjust: 100%;
+    background-image: url(../images/tangbg.gif);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cd0200;
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*版心*/
+.w {
+    width: 1536px;
+    margin: 0 auto;
+}
+
+.ww {
+    margin: 0 auto;
+}
+
+/*!*!*头部*!*!*/
+/*!*header {*!*/
+/*!*    font-family: "宋体";*!*/
+/*!*    position: relative;*!*/
+/*!*    height: 79px;*!*/
+/*!*    background-color: rgba(214, 215, 208, 0.5);*!*/
+/*!*}*!*/
+
+/*.menu {*/
+/*    width: 1239px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.menu ul li {*/
+/*    float: left;*/
+/*    width: 177px;*/
+/*    height: 79px;*/
+/*    font-size: 30px;*/
+/*    line-height: 79px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.menu ul li:hover {*/
+/*    font-size: 35px;*/
+/*}*/
+
+/*.menu ul li a {*/
+/*    text-decoration: none;*/
+/*    color: #483533;*/
+/*}*/
+
+/*.menu ul li a:hover {*/
+/*    color: #b01d23;*/
+/*}*/
+
+/*#heart {*/
+/*    transform-origin: 50% 50%;*/
+/*    transform: rotateZ(90deg) translateX(-126px) scale(1.5, 1.5) translateY(0);*/
+/*    transition: 1s;*/
+/*}*/
+
+/*#heart:hover {*/
+/*    transition: 1s;*/
+/*    transform: rotateZ(0deg) translateX(0px) translateY(-40px) scale(0.7, 0.7);*/
+/*}*/
+
+/*!*头部end*!*/
+/*footer start*/
+footer {
+    height: 256px;
+    position: relative;
+}
+
+footer img {
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.footer-ul ul {
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+
+.footer-ul ul li {
+    float: left;
+    height: 80px;
+    width: 150px;
+    margin-left: 50px;
+    writing-mode: vertical-rl;
+}
+
+.footer span {
+    position: absolute;
+    bottom: 0;
+    left: 619px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #676262;
+}

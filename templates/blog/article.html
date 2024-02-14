@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>中医药典故</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700"
+          rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="/static/assets/css/main.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Custom fonts for this template-->
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+    <link rel="icon" href="/static/add2/yi.ico">
+    <!-- Custom styles for this template-->
+    <link href="/static/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<!--------------------------------------
+NAVBAR
+--------------------------------------->
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+</div>
+
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+    <div class="container">
+        <div class="row align-items-center position-relative">
+
+
+            <div class="site-logo">
+                <a href="/index" class="text-black"><span class="text-primary">BianQue</span></a>
+            </div>
+
+            <div class="col-12">
+                <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                    {#                        导航栏右侧#}
+                    <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                        {% ifequal 0 session.status %}
+                            <li><a href="/login" class="nav-link">注册/登录</a></li>
+                        {% endifequal %}
+                        {% ifequal 1 session.status %}
+                            <li><a class="nav-link">欢迎！{{ session.username }}</a></li>
+                            <li><a href="/logout" class="nav-link">退出登录</a></li>
+
+                        {% endifequal %}
+                        <li><a href="/index" class="nav-link">返回首页</a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+                                                                   class="site-menu-toggle py-5 js-menu-toggle text-black"><span
+                    class="icon-menu h3"></span></a></div>
+
+        </div>
+    </div>
+
+</header>
+
+<div class="site-section-cover overlay inner-page bg-light"
+     style="background-image: url('/static/images/medicine1.jpg');" data-aos="fade">
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-lg-10">
+
+                <div class="box-shadow-content">
+                    <div class="block-heading-1">
+                        <span class="d-block mb-3 text-white"
+                              data-aos="fade-up">让我们一起探索传承千年的中医历史...</span>
+                        <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">中医文化典故</h1>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End Navbar -->
+
+<!--------------------------------------
+HEADER
+--------------------------------------->
+<div class="container">
+    <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
+                    <p class="text-uppercase font-weight-bold">
+                        <a class="text-danger" href="#">神农尝百草</a>
+                    </p>
+                    <h1 class="display-4 secondfont mb-3 font-weight-bold">欲明中医理，先学中医史</h1>
+                    <p class="mb-3">
+                        继伏羲以后，神农氏是又一个对中华民族颇多贡献的传奇人物。神农氏本为姜水流域姜姓部落首领，除了发明农具以木制耒，教民稼穑饲养、制陶纺织及使用火，还发明了医术，制定了历法，开创九井相连的水利灌溉技术等。因为他发明农耕技术而号神农氏，因以火德王，故称炎帝、赤帝、烈(厉)山氏，世号神农，并被后世尊为农业之神。</p>
+                </div>
+                <div class="col-md-6 pr-0">
+                    <img src="/static/images/article_1.jpg" style="margin-top: 100px ;width:500px;height: 350px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-4 pb-4">
+
+    <div class="row justify-content-center">
+        <div class="col-lg-2 pr-4 mb-4 col-md-12">
+            <div class="sticky-top text-center">
+                <div class="text-muted">
+                    分享
+                </div>
+                <div class="share d-inline-block">
+                    <!-- AddToAny BEGIN -->
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                    </div>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+                <p>
+                    上古时候，五谷和杂草长在一起，药物和百花开在一起，哪些粮食可以吃，哪些草药可以治病，谁也分不清。黎民百姓靠打猎过日子，天上
+                    的飞禽越打越少，地下的走兽越打越稀，人们就只好饿肚子。谁要生疮害病，无医无药，不死也要脱层皮啊！老百姓的疾苦，神农氏瞧在眼里
+                    ，疼在心头。怎样给百姓充饥？怎样为百姓治病？神农苦思冥想了三天三夜，终于想出了一个办法。第四天，他带着一批臣民，从家乡随州历
+                    山出发，向西北大山走去。他们走哇，走哇，腿走肿了，脚起茧了，还是不停地走，整整走了七七四十九天，来到一个地方。只见高山一峰接
+                    一峰，峡谷一条连一条，山上长满奇花异草，大老远就闻到了香气。
+                </p>
+                <img src="/static/images/article_2.jpg" style="height:500px;width: 650px">
+                <p>
+                    神农他们正往前走，突然从峡谷窜出来一群狼虫虎豹，把他们团团围住。神农马上让臣民们挥舞神鞭，向野兽们打去。打走一批，又拥上来一
+                    批，一直打了七天七夜，才把野兽都赶跑了。那些虎豹蟒蛇身上被神鞭抽出一条条一块块伤痕，后来变成了皮上的斑纹。这时，臣民们说这里太险恶
+                    ，劝神农回去。神农摇摇头说："不能回！黎民百姓饿了没吃的，病了没医的，我们怎么能回去呢！"他说着领头进了峡谷，来到一座茫茫大山脚下。这
+                    山半截插在云彩里，四面是刀切崖，崖上挂着瀑布，长着青苔，溜光水滑，看来没有登天的梯子是上不走的。臣民们又劝他算了吧，还是趁早回去。神农摇
+                    摇头："不能回！黎民百姓饿了没吃的，病了没医的，我们怎么
+                    能回去呢！
+                </p>
+                <p>
+                    他站在一个小石山上，对着高山，上望望，下看看，左瞅瞅，右瞄瞄，打主意，想办法。后来，人们就把他站的这座小山峰叫“望农亭”
+                    。然后，他看见几只金丝猴，顺着高悬的古藤和横倒在崖腰的朽木，爬过来。神农灵机一动，有了。他当下把臣民们喊来，叫他们砍木杆，割藤
+                    条，靠着山崖搭成架子，一天搭上一层，从春天搭到夏天，从秋天搭到冬天，不管刮风下雨，还是飞雪结冰，从来不停工。整整搭了一年，搭了三
+                    百六十层，才搭到山顶。传说，后来人们盖楼房用的脚手架，就是学习神农的办法。</p>
+                <img src="/static/images/article_3.jpg" style="height:350px;width: 750px">
+                <p>
+                    神农带着臣民，攀登木架，上了山顶了，嘿呀，山上真是花草的世界，红的、绿的、白的、黄的，各色各样，密密丛丛。神农喜欢极了，他叫臣民们防着狼虫虎豹，他亲自采摘花草，放到嘴里尝。为了在这里尝百草，为老百姓找吃的，找医药，神农就叫臣民在山上栽了几排冷杉，当做城墙防野兽，在墙内盖茅屋居住。后来，人们就把神农住的地方叫“木城”。白天，他领着臣民到山上尝百
+                    草，晚上，他叫臣民生起篝火，他就着火光把它详细记载下来：哪些草是苦的，哪些热，哪些凉，哪些能充饥，哪些能医病，都写得清清楚楚 </p>
+                <img src="/static/images/article_4.jpg" style="height:230px;width: 750px">
+                <p>
+                    有一次，他把一棵草放到嘴里一尝，霎时天旋地转，一头栽倒。臣民们慌忙扶他坐起，他明白自己中了毒，可是已经不会说话了，只好用最后一点力气，指着面前一棵红亮亮的灵芝草，又指指自己的嘴巴。臣民们慌忙把那红灵芝放到嘴里嚼嚼，喂到他嘴里。神农吃了灵芝草，毒气解了，头不昏了，会说话了。从此，人们都说灵芝草能起死回生。</p>
+                <img src="/static/images/article_5.jpg" style="height:350px;width: 750px">
+                <p>
+                    臣民们担心他这样尝草，太危险了，都劝他还是下山回去。他又摇摇头说：“不能回。黎民百姓饿了没吃的，病了没医的，我们怎么能回去呢。”说罢，他又接着尝百草。他尝完一山花草，又到另一山去尝，还是用木杆搭架的办法，攀登上去。一直尝了七七四十九天，踏遍了这里的山山岭岭。</p>
+
+                <p>
+                    他尝出了麦、稻、谷子、高粱能充饥，就叫臣民把种子带回去，让黎民百姓种植，这就是后来的五谷。他尝出了三百六十五种草药，写成《神农本草》，叫臣民带回去，为天下百姓治病。神农尝完百草，为黎民百姓找到了充饥的五谷，医病的草药，来到回生寨，准备下山回去。他放眼一望，遍山搭的木架不见了。原来，那些搭架的木杆，落地生根，淋雨吐芽，年深月久，竟然长成了一片茫茫林海。神农正在为难，突然天空飞来一群白鹤，把他和护身的几位臣民，接上天廷去了。从此，回生寨一年四季，香气弥漫。为了纪念神农尝百草、造福人间的功绩，老百姓就把这一片茫茫林海，取名为"神农架"。把神农升天的回生寨，改名为“留香寨”。
+
+                </p>
+            </article>
+
+        </div>
+    </div>
+</div>
+
+<div class="container pt-4 pb-4">
+    <h5 class="font-weight-bold spanborder"><span>继续阅读</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card border-0 mb-4 box-shadow h-xl-300" onclick="document.getElementById('form4').submit()">
+                <div style="background-image: url(/static/images/article_7.jpg); height: 150px; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <form method="post" id="form4" action="/getpassage/">
+                    {% csrf_token %}
+                    <input type="hidden" value="4" name="passageid">
+                </form>
+                <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+                    <h2 class="h4 font-weight-bold">
+                        <a class="text-dark" href="#">春季降火吃什么</a>
+                    </h2>
+                    <p class="card-text">
+                        　“春燥”的起因是春天里的空气干燥、湿度低,会使人体内丢掉大量的水分,需要补充新鲜水果和蔬菜。
+                    </p>
+                    <div>
+                        <small class="d-block"><a class="text-muted" href="#">Favid Rick</a></small>
+                        <small class="text-muted">Dec 12 · 5 min read</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form method="post" id="form2" action="/getpassage/">
+            {% csrf_token %}
+            <input type="hidden" value="2" name="passageid">
+        </form>
+        <div class="col-lg-6">
+            <div class="flex-md-row mb-4 box-shadow h-xl-300">
+
+                <div class="mb-3 d-flex align-items-center" onclick="document.getElementById('form2').submit()">
+                    <img height="90" width="110" src="/static/images/pa2.jpg">
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                            <a class="text-dark" href="./article.html">为什么豆浆不宜多喝？</a>
+                        </h2>
+                        <div class="card-text text-muted small">
+                            对于肾脏功能不好的人，豆浆中的植物蛋白会增加肾脏的负担
+                        </div>
+                        <small class="text-muted">Dec 12 · 5 min read</small>
+                    </div>
+                </div>
+                <form method="post" id="form3" action="/getpassage/">
+                    {% csrf_token %}
+                    <input type="hidden" value="3" name="passageid">
+                </form>
+                <div class="mb-3 d-flex align-items-center" onclick="document.getElementById('form3').submit()">
+                    <img height="90" width="120" src="/static/images/pa1.jpg">
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                            <a class="text-dark" href="./article.html">喝骨头汤有什么好处？</a>
+                        </h2>
+                        <div class="card-text text-muted small">骨头汤、排骨汤等是人们喜爱的食品，它含有丰富的卵磷脂、类粘蛋白和骨胶原。
+                        </div>
+                        <small class="text-muted">Dec 12 · 5 min read</small>
+                    </div>
+                </div>
+                <form method="post" id="form1" action="/getpassage/">
+                    {% csrf_token %}
+                    <input type="hidden" value="1" name="passageid">
+                </form>
+                <div class="mb-3 d-flex align-items-center" onclick="document.getElementById('form1').submit()">
+                    <img height="90" width="110" src="/static/images/pa3.jpg">
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                            <a class="text-dark">莲子百合的功效与作用</a>
+                        </h2>
+                        <div class="card-text text-muted small">
+                            百合功能主治: 养阴润肺，清心安神。
+                        </div>
+                        <small class="text-muted">Dec 12 · 5 min read</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+<!-- End Main -->
+
+{#底部黑块#}
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="footer-heading mb-4">关于我们</h2>
+                        <p>
+                            我是来自江苏大学的张文洋。如有需要，可以通过上边的“联系我”或者直接向3233005441@qq.com给我发送邮件哦！</p>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <h2 class="footer-heading mb-4">友情链接</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">中华扁鹊网</a></li>
+                            <li><a href="https://www.zhzyw.com/">中医中药网</a></li>
+                            <li><a href="https://www.cacm.org.cn/">中华中医药协会</a></li>
+                            <li><a href="https://zhongyigen.com/#">中医智库网</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 ml-auto">
+
+                <form action="/subscribe/" method="post" class="footer-suscribe-form">
+                    {% csrf_token %}
+                    <div class="mb-5">
+                        <h2 class="footer-heading mb-4">订阅我的更新！</h2>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                   placeholder="输入电子邮箱..." aria-label="Enter Email"
+                                   aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-white" type="submit" id="button-addon2">
+                                    订阅
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="footer-heading mb-4">Follow Us</h2>
+                    <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                    <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                    <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                    <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </form>
+            </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <div class="border-top pt-5">
+                    <p>
+                        <!-- Link back to cssmoban can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy; 2024/2/6 JSU
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="/static/assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="/static/assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="/static/assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/assets/js/functions.js" type="text/javascript"></script>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/jquery.waypoints.min.js"></script>
+<script src="/static/js/jquery.animateNumber.min.js"></script>
+<script src="/static/js/jquery.fancybox.min.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
+<script src="/static/js/aos.js"></script>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

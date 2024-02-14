@@ -1,0 +1,563 @@
+#this-li {
+    font-size: 35px;
+}
+
+#this-li a {
+    color: #b01d23;
+}
+
+#this-li a:hover {
+    color: #483533;
+}
+
+.nav-carousel {
+    height: 666px;
+}
+
+.main {
+    height: 500px;
+    position: relative;
+}
+
+.focus {
+    position: absolute;
+    top: 30px;
+    left: 148px;
+    width: 1239px;
+    height: 601px;
+    overflow: hidden;
+}
+
+.focus ul li a img {
+    width: 1239px;
+    height: 601px;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus a:hover {
+    font-size: 20px;
+    color: #b01d23;
+    text-decoration: none;
+}
+
+.arrow-l,
+.arrow-r {
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 583px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #b01d23;
+}
+
+.orders {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.order a {
+    font-family: Trebuchet MS;
+    font-size: 30px;
+    color: #483533;
+    text-decoration: none;
+}
+
+.order a p {
+    margin-top: 5px;
+}
+
+.order a:hover {
+    transition: 0.5s;
+    color: #b01d23;
+    font-size: 35px;
+}
+
+.keyword {
+    position: relative;
+    width: 1239px;
+    height: 550px;
+    background: url("../images/page1/keyword.png");
+}
+
+/*keyword*/
+.circle-big {
+    height: 90px;
+    width: 90px;
+}
+
+.circle-medium {
+    height: 70px;
+    width: 70px;
+}
+
+.circle-small {
+    height: 50px;
+    width: 50px;
+}
+
+.loop {
+    float: left;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.loop:hover {
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.keyword ul li {
+    position: absolute;
+}
+
+.keyword ul li:first-child {
+    top: 217px;
+    left: 104px;
+}
+
+.keyword ul li:nth-child(2) {
+    top: 84px;
+    left: 418px;
+}
+
+.keyword ul li:nth-child(3) {
+    top: 173px;
+    left: 597px;
+}
+
+.keyword ul li:nth-child(4) {
+    top: 39px;
+    right: 238px;
+}
+
+.keyword ul li:nth-child(5) {
+    top: 351px;
+    right: 64px;
+}
+
+.keyword ul li:nth-child(6) {
+    top: 261px;
+    left: 309px;
+}
+
+.keyword ul li:nth-child(7) {
+    top: 441px;
+    left: 416px;
+}
+
+.keyword ul li:nth-child(8) {
+    top: 216px;
+    right: 368px;
+}
+
+.keyword ul li:nth-child(9) {
+    top: 396px;
+    right: 261px;
+}
+
+.keyword ul li:nth-child(10) {
+    top: 95px;
+    right: 29px;
+}
+
+.keyword ul li:nth-child(11) {
+    top: 395px;
+    left: 34px;
+}
+
+.keyword ul li:nth-child(12) {
+    top: 135px;
+    left: 253px;
+}
+
+.keyword ul li:nth-child(13) {
+    top: 428px;
+    left: 187px;
+}
+
+.keyword ul li:nth-child(14) {
+    top: 304px;
+    left: 531px;
+}
+
+.keyword ul li:nth-child(15) {
+    top: 381px;
+    right: 501px;
+}
+
+.keyword ul li:nth-child(16) {
+    top: 93px;
+    right: 435px;;
+}
+
+.keyword ul li:last-child {
+    top: 199px;
+    right: 156px;
+}
+
+/*keyword_end*/
+.history {
+    height: 700px;
+}
+
+.introduce-word {
+    float: left;
+    width: 610px;
+    height: 629px;
+    margin-left: 149px;
+}
+
+.introduce-word span {
+    height: 629px;
+    writing-mode: vertical-rl;
+    word-wrap: break-word;
+    text-indent: 2em;
+    color: #5d5656;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 3px;
+
+}
+
+.introduce-img {
+    float: right;
+    position: relative;
+    width: 629px;
+    height: 629px;
+    margin-right: 148px;
+}
+
+.introduce-img img {
+    position: absolute;
+    left: 0;
+}
+
+@keyframes Rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#Rotate-img {
+    transition: 0.5s;
+    animation: Rotate 12s linear infinite;
+}
+
+/*history-end*/
+.books {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.card .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .photo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .photo {
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0 0 0 0.8);
+}
+
+.card .photo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card h1 {
+    color: #fff;
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+}
+
+.card:hover h1 {
+    top: 170px;
+    color: #000;
+}
+
+.card h2 {
+    margin-top: 220px;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.card p {
+    width: 90%;
+    text-indent: 32px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.card a {
+    font-size: 14px;
+    color: rgba(48, 42, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+.card a:hover {
+    color: #b01d23;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*books-card end*/
+.Materia-Medica {
+    height: 700px;
+}
+
+.Materia-Medica-word {
+    float: right;
+    width: 610px;
+    height: 629px;
+    margin-right: 149px;
+}
+
+.Materia-Medica span {
+    height: 629px;
+    word-wrap: break-word;
+    text-indent: 2em;
+    color: #5d5656;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+.Materia-Medica-img {
+    float: left;
+    position: relative;
+    width: 629px;
+    height: 629px;
+    margin-left: 148px;
+}
+
+.Materia-Medica-img img {
+    position: absolute;
+    top: 3px;
+    left: -26px;
+}
+
+/*end*/
+.author {
+    position: relative;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.author-1 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-1 #tx1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 1px solid rgba(57, 57, 88, 0.5);
+}
+
+.author-1 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+.author-2 {
+    position: absolute;
+    top: 0;
+    left: 568px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-2 #tx2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 1px solid rgba(57, 57, 88, 0.5);
+}
+
+.author-2 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+.author-3 {
+    position: absolute;
+    top: 0;
+    left: 968px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-3 #tx3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 1px solid rgba(57, 57, 88, 0.5);
+}
+
+.author-3 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+
+.author-1:hover #tx1 {
+    border: 5px solid rgba(57, 57, 88, 0.5);
+    transition: 1s;
+    height: 120px;
+    width: 120px;
+    left: 140px;
+}
+
+.author-2:hover #tx2 {
+    border: 5px solid rgba(71, 117, 71, 0.5);
+    transition: 1s;
+    height: 120px;
+    width: 120px;
+    left: 140px;
+}
+
+.author-3:hover #tx3 {
+    border: 5px solid rgba(122, 77, 77, 0.5);
+    transition: 1s;
+    height: 120px;
+    width: 120px;
+    left: 140px;
+}
+
+
+.author h1 {
+    font-size: 25px;
+}
+
+.author span {
+    font-size: 20px;
+}
+
+.author #introduction {
+    position: absolute;
+    top: 380px;
+    left: 200px;
+}
+
+/*end*/

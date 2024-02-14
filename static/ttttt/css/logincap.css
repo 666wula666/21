@@ -1,18 +1,20 @@
 
-body{
+body {
     /* 方便演示，满屏居中 */
-   
+
     display: flex;
-   
+
 }
+
 /* 小拼图 */
-.block{
+.block {
     position: absolute;
     left: 0;
     top: 0;
 }
+
 /* 滑动条 */
-.slider-container{
+.slider-container {
     position: relative;
     text-align: center;
     width: 310px;
@@ -23,7 +25,8 @@ body{
     color: #45454c;
     border: 1px solid #e4e7eb;
 }
-.slider-mask{
+
+.slider-mask {
     position: absolute;
     left: 0;
     top: 0;
@@ -31,18 +34,20 @@ body{
     border: 0px solid #1991fa;
     background-color: #d1e9fe;
 }
-.slider{
+
+.slider {
     position: absolute;
     left: 0;
     top: 0;
     width: 40px;
     height: 40px;
     background: #fff;
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: background 0.2s linear;
 }
-.slider-icon{
+
+.slider-icon {
     position: absolute;
     left: 13px;
     top: 15px;
@@ -51,63 +56,72 @@ body{
     background: url(/images/icon_light.png) 0 -26px;
     background-size: 34px 471px;
 }
+
 /* 滑动条活动态 */
-.slider-container-active .slider{
+.slider-container-active .slider {
     height: 38px;
     top: -1px;
     border: 1px solid #1991fa;
 }
-.slider-container-active .slider-mask{
+
+.slider-container-active .slider-mask {
     height: 38px;
     border-width: 1px;
 }
+
 /* 滑动条成功态 */
-.slider-container-success .slider{
+.slider-container-success .slider {
     height: 38px;
     top: -1px;
     border: 1px solid #52ccba;
     background-color: #52ccba !important;
 }
-.slider-container-success .slider-mask{
+
+.slider-container-success .slider-mask {
     height: 38px;
     border: 1px solid #52ccba;
     background-color: #d2f4ef;
 }
+
 /* 成功图标 */
-.slider-container-success .slider-icon{
+.slider-container-success .slider-icon {
     background-position: 0 0 !important;
 }
+
 /* 滑动条失败态 */
-.slider-container-fail .slider{
+.slider-container-fail .slider {
     height: 38px;
     top: -1px;
     border: 1px solid #f57a7a;
     background-color: #f57a7a !important;
 }
-.slider-container-fail .slider-mask{
+
+.slider-container-fail .slider-mask {
     height: 38px;
     border: 1px solid #f57a7a;
     background-color: #fce1e1;
 }
+
 /* 失败图标 */
-.slider-container-fail .slider-icon{
+.slider-container-fail .slider-icon {
     background-position: 0 -83px !important;
 }
 
 .slider-container-active .slider-text,
 .slider-container-success .slider-text,
-.slider-container-fail .slider-text{
+.slider-container-fail .slider-text {
     display: none;
 }
 
-.slider:hover{
+.slider:hover {
     background: #1991fa;
 }
-.slider:hover .slider-icon{
+
+.slider:hover .slider-icon {
     background-position: 0 -13px;
 }
 
-.refresh-icon{
+.refresh-icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -118,7 +132,7 @@ body{
     cursor: pointer;
 }
 
-#msg{
+#msg {
     height: 20px;
     line-height: 20px;
     text-align: center;

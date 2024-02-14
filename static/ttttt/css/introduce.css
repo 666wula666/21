@@ -1,83 +1,117 @@
-      body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-      background-color: white;
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 
 }
-.tt{
-  text-align: center;
-   font-size:40px;
+
+.tt {
+    text-align: center;
+    font-size: 40px;
     /*font-weight: 500  bold;*/
-     background: url('../img/bz.jpg') no-repeat center center;
-     background-size: cover;
-     color: transparent;
+    background: url('../img/bz.jpg') no-repeat center center;
+    background-size: cover;
+    color: transparent;
     -webkit-background-clip: text;
 }
+
 /*卡片导航栏样式*/
-.card-a:link,.card-a:hover,.card-a:visited,.card-a:active {
-  color: #fff;
-  text-decoration: none;
+.card-a:link, .card-a:hover, .card-a:visited, .card-a:active {
+    color: #fff;
+    text-decoration: none;
 }
+
 .card-holder {
-  position: fixed;
-  width: 30px;
-  top:10%;
-  overflow: visible;
-  z-index: 5;
+    position: fixed;
+    width: 30px;
+    top: 10%;
+    overflow: visible;
+    z-index: 5;
 }
 
 .card-wrapper {
-  display: inline-block;
-  float: right;
-  clear: both;
+    display: inline-block;
+    float: right;
+    clear: both;
 }
 
 .card {
-  position: relative;
-  left: 32px;
-  padding: 16px 32px 16px 64px;
-  margin: 8px;
-  x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
-  background: #fff;
-  transition: all 0.3s ease-in-out 0.1s;
+    position: relative;
+    left: 32px;
+    padding: 16px 32px 16px 64px;
+    margin: 8px;
+    x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    transition: all 0.3s ease-in-out 0.1s;
 }
 
 .card:hover {
-  position: relative;
-  left: 100%;
-  margin-left: -32px;
-  box-shadow:
-    0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    position: relative;
+    left: 100%;
+    margin-left: -32px;
+    box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.5),
     0 8px 8px -8px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .card-content {
-  display: inline-block;
-  color: #fff;
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  white-space: nowrap;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
 }
+
 /*卡片颜色*/
-.bg-01 { background: rgb(111, 57, 15); }
-.bg-02 { background: rgba(178, 164, 150,0.5);text-color: rgb(78, 115, 223); }
-.bg-03 { background: rgb(111, 57, 15);}
-.bg-04 { background: rgba(178, 164, 150,0.5);color: rgb(78, 115, 223);}
-.bg-05 { background: rgb(111, 57, 15); }
-.bg-06 { background: rgba(178, 164, 150,0.5); color: rgb(78, 115, 223);}
-.bg-07 { background: rgb(111, 57, 15); }
-.bg-08 { background: rgba(178, 164, 150,0.5); color: rgb(78, 115, 223);}
-.bg-09 { background:rgb(111, 57, 15); }
-/*---------------------------------------------------------------------------------------------------------------------*/
-.container
-{
-	 margin: 0 auto;
+.bg-01 {
+    background: rgb(111, 57, 15);
 }
-p{
-  font-size: 20px;
+
+.bg-02 {
+    background: rgba(178, 164, 150, 0.5);
+    text-color: rgb(78, 115, 223);
+}
+
+.bg-03 {
+    background: rgb(111, 57, 15);
+}
+
+.bg-04 {
+    background: rgba(178, 164, 150, 0.5);
+    color: rgb(78, 115, 223);
+}
+
+.bg-05 {
+    background: rgb(111, 57, 15);
+}
+
+.bg-06 {
+    background: rgba(178, 164, 150, 0.5);
+    color: rgb(78, 115, 223);
+}
+
+.bg-07 {
+    background: rgb(111, 57, 15);
+}
+
+.bg-08 {
+    background: rgba(178, 164, 150, 0.5);
+    color: rgb(78, 115, 223);
+}
+
+.bg-09 {
+    background: rgb(111, 57, 15);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+.container {
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
 }

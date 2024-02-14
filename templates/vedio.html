@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大医精诚</title>
+    {##}
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+
+    <!-- 引入bootstrap图标库  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
+
+    {#    <link rel="stylesheet" href="/static/ttttt/css/index.css">#}
+    <link rel="stylesheet" href="/static/ttttt/css/font-awesome.min.css">
+    {#    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">#}
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link rel="stylesheet" href="/static/css/add.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+
+    <link rel="stylesheet" href="/static/ttttt/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/ttttt/css/video.css">
+
+    <link rel="icon" href="/static/add2/yi.ico">
+
+
+    <style>
+        #add li a:hover {
+            color: firebrick;
+        !important;
+        }
+
+        h5 {
+            display: inline-block;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"
+      style="padding:0;background-image: url('/static/images/rwbck.jpg')">
+
+
+<header style="background-color: white;top:0px;">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+         style="font-family: Raleway!important;">
+        <h1 class="my-0 mr-md-auto " style="margin-left:60px;color: #4e73df!important;"><a href="/index"
+                                                                                           style="font-weight:bold;font: 32px Raleway,-apple-system,BlinkMacSystemFont;color: #4e73df!important;"><img
+                style="width: 220px; " src="static/images/my_logo.jpg"></a></h1>
+        <nav class="my-2 my-md-0 mr-md-3">
+
+
+            {#                        导航栏右侧#}
+
+            {% ifequal 0 session.status %}
+                <h5><a style="color: black!important;" href="/login">注册/登录</a></h5>
+            {% endifequal %}
+            {% ifequal 1 session.status %}
+                <h5><a style="color: black!important;" class="nav-link">欢迎！{{ session.username }}</a></h5>
+                <h5><a style="color: black!important;" href="/logout" class="p-2 text-dark">退出登录</a></h5>
+
+            {% endifequal %}
+
+            <h5 style="margin-right: 120px;margin-left: 30px;"><a class="p-2 text-dark " style="color: black!important;"
+                                                                  href="/index/">返回首页</a></h5>
+
+        </nav>
+
+    </div>
+
+
+</header>
+<section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
+         style="margin-top:-7%;margin-bottom:50px;height:380px;background-size:inherit;  background-image: url('/static/images/header.jpg');">
+    <span class="mask bg-primary alpha-7"></span>
+    <div class="spotlight-holder py-lg pt-lg-xl">
+        <div class="container d-flex align-items-center no-padding">
+            <div class="col">
+                <div class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
+                    <div class="col-7">
+                        <div class="text-center mt-5">
+                            <p style="font-family:黑体;margin-top: 85px !important;"
+                               class="lead text-white mt-3 lh-180 c-white animated" data-animation-in="fadeInUp"
+                               data-animation-delay="2500">
+                                让我们通过一部纪录片来感受中医的博大精深...
+                            </p>
+                            <h1 style="font-family: 黑体;!important;font-size: 66px;"
+                                class="heading display-4 font-weight-900 text-white mt-5 animated"
+                                data-animation-in="fadeInUp" data-animation-delay="2000">
+                                大医精诚
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 视频播放 -->
+<div class="container" style="margin-bottom: 80px">
+    <!-- 1 -->
+    <div class="mvcon">
+        <video src="/static/ttttt/img/v1.mp4" autobuffer autoloop loop controls class="mv">
+
+        </video>
+        <h3 class="maintt">我们的中医药</h3>
+    </div>
+    <!-- 2 -->
+    <div class="listcon" style="height: 465px">
+        <!-- 21-->
+        <div class="list active">
+            <video src="/static/ttttt/img/v1.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">我们的中医药</h3>
+        </div>
+        <div class="list">
+            <video src="/static/ttttt/img/vv1.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_1_送给世界的礼物</h3>
+        </div>
+        <!-- 22 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv2.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_2_针刺麻醉</h3>
+        </div>
+        <!-- 23 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv3.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_3_走向世界的中医</h3>
+        </div>
+        <!-- 24 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv4.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_4_更好地与癌症共存</h3>
+        </div>
+
+        <!-- 25 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv5.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_5_药食同源</h3>
+        </div>
+
+        <!-- 26 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv6.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_6_森林里的珍贵药材</h3>
+        </div>
+
+        <!-- 27 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv7.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_7_中医灸法</h3>
+        </div>
+        <!-- 28 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv8.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_8_现代中药的产业化</h3>
+        </div>
+        <!-- 29 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv9.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_9_中草药的规模化种植</h3>
+        </div>
+
+        <!-- 210 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv10.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_10_苗医的继承</h3>
+        </div>
+
+        <!-- 211 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv11.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_11_少林医药</h3>
+        </div>
+
+        <!-- 212 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv12.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_12_功夫疗法</h3>
+        </div>
+
+        <!-- 213 -->
+        <div class="list">
+            <video src="/static/ttttt/img/vv13.mp4" class="lv">
+
+            </video>
+            <h3 class="listtt">东方医学_13_天人相应</h3>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/static/ttttt/js/video.js"></script>
+</body>
+</html>

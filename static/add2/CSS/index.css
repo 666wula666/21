@@ -1,0 +1,137 @@
+body {
+    overflow-y: hidden;
+}
+
+.index-1 {
+    position: relative;
+    height: 700px;
+}
+
+.four {
+    position: absolute;
+    top: 70px;
+    left: 67px;
+    width: 1400px;
+    height: 600px;
+
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.four ul {
+    width: 100%;
+    height: 100%;
+}
+
+.four li {
+    height: 600px;
+    width: 280px;
+    float: left;
+}
+
+.four ul li:nth-child(1) {
+    opacity: 0.5;
+}
+
+.four ul li:nth-child(2) {
+    opacity: 1;
+}
+
+.four ul li:nth-child(4) {
+    opacity: 1;
+}
+
+.four ul li:nth-child(5) {
+    opacity: 0.5;
+}
+
+.four ul li:nth-child(1):hover {
+    opacity: 1;
+}
+
+.four ul li:nth-child(2):hover {
+    opacity: 0.5;
+}
+
+.four ul li:nth-child(3):hover p {
+    background-color: rgba(214, 215, 208, 0.5);
+}
+
+.four ul li:nth-child(4):hover {
+    opacity: 0.5;
+}
+
+.four ul li:nth-child(5):hover {
+    opacity: 1;
+}
+
+.four ul li:nth-child(3) {
+    position: relative;
+    opacity: 1;
+}
+
+.four ul li:nth-child(3) img {
+    float: left;
+}
+
+.ind-text {
+    position: absolute;
+}
+
+.ind-text h3 {
+    writing-mode: vertical-rl;
+    width: 30px;
+    height: 300px;
+    letter-spacing: 30px;
+    font-size: 80px;
+    color: #ffcf69;
+}
+
+.ind-text h3:first-child {
+    position: absolute;
+    top: 165px;
+    left: 160px;
+}
+
+.ind-text h3:last-child {
+    position: absolute;
+    top: 370px;
+    left: 160px;
+}
+
+.four li:nth-child(3) p {
+    position: absolute;
+    bottom: 267px;
+    border: 1px solid #b01d23;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    left: 116px;
+    height: 28px;
+    width: 68px;
+    z-index: -1;
+}
+
+.footer-ul {
+    opacity: 0.9;
+    height: 50px;
+    position: absolute;
+    bottom: 70px;
+    left: 5px;
+}
+
+.footer-ul a {
+    color: #b01d23;
+}
+
+.footer-ul a:hover {
+    color: #ffcf69;
+}

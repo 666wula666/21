@@ -1,0 +1,141 @@
+#this-li {
+    font-size: 35px;
+}
+
+#this-li a {
+    color: #b01d23;
+}
+
+#this-li a:hover {
+    color: #483533;
+}
+
+.jainju {
+    height: 150px;
+}
+
+@-webkit-keyframes Rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.author {
+    position: relative;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.author-1 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-1 #tx1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 5px solid rgba(57, 57, 88, 0.5);
+}
+
+.author-1 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+.author-2 {
+    position: absolute;
+    top: 0;
+    left: 568px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-2 #tx2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 5px solid rgba(71, 117, 71, 0.5);
+}
+
+.author-2 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+.author-3 {
+    position: absolute;
+    top: 0;
+    left: 968px;
+    width: 400px;
+    height: 400px;
+}
+
+.author-3 #tx3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    border: 5px solid rgba(122, 77, 77, 0.5);
+}
+
+.author-3 section {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    text-align: center;
+}
+
+.author-1:hover img {
+    transition: 0.5s;
+    animation: Rotate 7s linear infinite;
+}
+
+.author-2:hover img {
+    transition: 0.5s;
+    animation: Rotate 7s linear infinite;
+}
+
+.author-3:hover img {
+    transition: 0.5s;
+    animation: Rotate 7s linear infinite;
+}
+
+.author h1 {
+    font-size: 25px;
+}
+
+.author span {
+    font-size: 20px;
+}
+
+.fill {
+    height: 100px;
+}
