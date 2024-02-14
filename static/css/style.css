@@ -276,7 +276,7 @@ html {
 }
 
 body {
-    background-image: url(/static/add2/images/tangbg.gif);
+    /*background-image: url(/static/add2/images/tangbg.gif);*/
 !important;
     line-height: 1.7;
     font-weight: 400;
