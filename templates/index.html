@@ -31,13 +31,12 @@
         body {
 
             background-image: url(/static/add2/images/tangbg.gif);
-            overflow: scroll;
-            overflow-x: hidden;
+          
         }
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body >
 <div class="adcenter">
     <script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script>
 </div>
@@ -458,148 +457,62 @@
         </div>
     </div>
 
-    {#    联系我们#}
-    {#    <div class="site-section bg-light" id="contact-section">#}
-    {#        <div class="container">#}
-    {#            <div class="row">#}
-    {#                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">#}
-    {#                    <div class="block-heading-1">#}
-    {#                        <h2>联系我</h2>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#            <div class="row justify-content-center">#}
-    {#                <div class="col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="100">#}
-    {#                    <form action="/sendemail/" method="post">#}
-    {#                        {% csrf_token %}#}
-    {#                        <div class="form-group row">#}
-    {#                            <div class="col-md-6 mb-4 mb-lg-0">#}
-    {#                                <input type="text" class="form-control" placeholder="昵称">#}
-    {#                            </div>#}
-    {#                            <div class="col-md-6">#}
-    {#                                <input type="text" class="form-control" placeholder="单位">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {##}
-    {#                        <div class="form-group row">#}
-    {#                            <div class="col-md-12">#}
-    {#                                <input type="text" name='a1' class="form-control" placeholder="电子邮件">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {##}
-    {#                        <div class="form-group row">#}
-    {#                            <div class="col-md-12">#}
-    {#                                <textarea name="" id="" class="form-control" placeholder="给我的留言填写在这里..." cols="30"#}
-    {#                                          rows="10"></textarea>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="form-group row">#}
-    {#                            <div class="col-md-6 mr-auto">#}
-    {#                                <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5"#}
-    {#                                       value="提交留言">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        {% if messages %}#}
-    {#                            <script>#}
-    {#                                {% for msg in messages %}#}
-    {#                                    alert('{{ msg.message }}');#}
-    {#                                {% endfor %}#}
-    {#                            </script>#}
-    {#                        {% endif %}#}
-    {#                    </form>#}
-    {#                </div>#}
-    {##}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </div>#}
-
-    <!-- 联系我 start -->
-    <div class="container-fluid py-5 bg-light" id="contact-section">
-        <div class="container">
-            <h3 id="lx " style="color: black!important;">
-                联系我<span class=" fw-lighter">Call</span>
-            </h3>
-            <p class=" fw-lighter mt-3 mb-5">
-                我知道你一定有很多话想跟我说，无论是关于此项目，还是其他方面的，只要你有问题，就可以发送给我，我会尽可能与你联系。
-            </p>
-            <div class="row">
-                <div class="col-12 col-md-5 order-2 order-md-0 mt-4 mt-md-0">
-                    <div class=" d-none d-md-block">
-                        <h5 style="color: black!important;">发一封邮件试试</h5>
-                        <span class=" fw-lighter">今天第一次刚认识我？没关系，我们已经是朋友了。发个邮件让我知道你来过了。</span>
-                    </div>
-                    <h5 class="mt-4 mt-md-5" style="color: black!important;">联系方式</h5>
-                    <b class="mb-5" style="color: black!important;">Email:</b>
-                    <span style="color: black!important;">3233005441@qq.com</span><br>
-                    <b style="color: black!important;">Phone:</b>
-                    <span style="color: black!important;">18861987512</span><br>
-                    <b style="color: black!important;">QQ:</b>
-                    <span style="color: black!important;">3233005441</span><br>
-                    <b style="color: black!important;">微信:</b>
-                    <span style="color: black!important;">18861987512</span>
-                    <h5 style="color: black!important;" class="mt-4">联系地址</h5>
-                    <b style="color: black!important;">Office:</b>
-                    <span style="color: black!important;">江苏省镇江市江苏大学</span>
-                </div>
-                <div class="col-md-7 col-12 border shadow">
-                    <form>
-                        <div class="row p-5">
-                            <div class="col-12 d-block d-md-none mb-4">
-                                <h5>发一封邮件试试</h5>
-                                <span class=" fw-lighter">今天第一次刚认识我？没关系，我们已经是朋友了。发个邮件让我知道你来过了。</span>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <label class=" form-label fw-lighter" for="firstNameIput">First Name<span
-                                        class=" text-danger">*</span></label>
-                                <input type="text" required class="form-control" id="firstNameIput"
-                                       placeholder="First Name"/>
-                                <label class=" form-label fw-lighter mt-4" for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email"/>
-                            </div>
-                            <div class="col-md-6 col-12 mt-4 mt-md-0">
-                                <label class=" form-label fw-lighter" for="lastNameIput">Last Name<span
-                                        class=" text-danger">*</span></label>
-                                <input type="text" required class="form-control" id="lastNameIput"
-                                       placeholder="Last Name"/>
-                                <label class=" form-label fw-lighter mt-4" for="phoneIput">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phoneIput" placeholder="Last Name"/>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <label class=" form-label fw-lighter" for="msgIput">Message<span
-                                        class=" text-danger">*</span></label>
-                                <textarea class=" form-control" required id="msgIput"></textarea>
-                                <button class="btn btn-dark mt-4 send" type="submit">发送邮件</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="alertAll d-none">
-        <div class="alertNode d-block d-md-none">
-            <div class="alert alert-light m-0 p-0 alertNodeContent position-absolute translate-middle top-50 start-50 p-md-5 p-3  fade show alert-dismissible pb-md-3 pb-2 w-75">
-                <h3 class=" lh-base mb-0 fs-5 p-2 text-center">我已收到您宝贵的建议，非常感谢！</h3>
-                <hr class=" m-md-3 m-2 mt-3 mt-md-5">
+     
+        <div class="site-section bg-light" id="contact-section">
+            <div class="container">
                 <div class="row">
-                    <div class="col-6 border-end border-secondary good">
-                        <div class=" text-center fs-5 my-0">好的</div>
+                    <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+                        <div class="block-heading-1">
+                            <h2>联系我</h2>
+                        </div>
                     </div>
-                    <div class="col-6 cancel">
-                        <div class=" text-center fs-5 my-0">取消</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <form action="/sendemail/" method="post">
+                            {% csrf_token %}
+                            <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">
+                                    <input type="text" class="form-control" placeholder="昵称">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="单位">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <input type="text" name='a1' class="form-control" placeholder="电子邮件">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <textarea name="" id="" class="form-control" placeholder="给我的留言填写在这里..." cols="30"
+                                              rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 mr-auto">
+                                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5"
+                                           value="提交留言">
+                                </div>
+                            </div>
+                            {% if messages %}
+                                <script>
+                                    {% for msg in messages %}
+                                        alert('{{ msg.message }}');
+                                    {% endfor %}
+                                </script>
+                            {% endif %}
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="alertNode d-none d-md-block">
-            <div class="alert alert-dark m-0 p-0 alertNodeContent position-absolute translate-middle top-50 start-50 p-md-5 p-3  fade show alert-dismissible">
-                <button class=" btn-close d-none d-md-block" data-bs-dismiss="alert"></button>
-                <h3 class=" lh-base mb-0">我已收到您宝贵的建议，非常感谢！</h3>
-            </div>
-        </div>
-    </div>
-    <!-- 联系我 end -->
 
+    
 
     {#底部黑块#}
     <footer class="site-footer">
