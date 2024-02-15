@@ -1,4 +1,4 @@
-#BIANQUE
+##BIANQUE
 
 基于Django,Neo4j与图谱问答技术的的中医药知识科普平台。
 
