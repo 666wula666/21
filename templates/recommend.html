@@ -24,8 +24,8 @@
         body {
 
             background-image: url(/static/add2/images/tangbg.gif);
-            overflow: scroll;
-            overflow-x: hidden;
+            {#overflow: scroll;#}
+            {#overflow-x: hidden;#}
         }
     </style>
 </head>
@@ -95,7 +95,7 @@
                         <div class="block-heading-1">
                             <span class="d-block mb-3 text-white"
                                   data-aos="fade-up">看一看您可能感兴趣的食物、药品与病理知识</span>
-                            <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">为您推荐</h1>
+                            <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">词条学习</h1>
                         </div>
 
 
@@ -113,7 +113,7 @@
                 <div class="col-md-9 blog-content">
 
                     {% for a in a0 %}
-                        <h3 style="color: #0b0b0b">我从知识库中为您抽取出如下内容：</h3>
+                        <h3 style="color: #0b0b0b;display: inline">我从知识库中为您抽取出如下内容：</h3><button type="button" onclick="reloadPage()" class="btn btn-outline-primary" style="position: relative;width:115px;margin-left:30%;rgdisplay: inline">换一换</button>
                         <div><h2>词条 id {{ a.id }}&nbsp;<strong>:</strong>{{ a.name }}</h2></div>
                         <div class="row">
                             <div class="col-lg-6">
@@ -381,7 +381,13 @@
 <script src="/static/js/aos.js"></script>
 
 <script src="/static/js/main.js"></script>
+<script>
+     function reloadPage(){
 
+      window.location.reload();
+
+  }
+</script>
 
 </body>
 
