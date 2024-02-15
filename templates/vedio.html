@@ -1,19 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大医精诚</title>
-    {##}
+    <title>知识词条</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
 
-
-    <!-- 引入bootstrap图标库  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
-
-    {#    <link rel="stylesheet" href="/static/ttttt/css/index.css">#}
-    <link rel="stylesheet" href="/static/ttttt/css/font-awesome.min.css">
-    {#    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">#}
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css">
@@ -21,96 +17,212 @@
     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="/static/css/aos.css">
-    <link rel="stylesheet" href="/static/css/add.css">
+    <link rel="icon" href="/static/add2/yi.ico">
+{#     <link rel="stylesheet" href="/static/ttttt/css/video.css">#}
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
-
-
-    <link rel="stylesheet" href="/static/ttttt/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/ttttt/css/video.css">
-
-    <link rel="icon" href="/static/add2/yi.ico">
-
-
     <style>
-        #add li a:hover {
-            color: firebrick;
-        !important;
-        }
+        
+        .container11 {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
 
-        h5 {
-            display: inline-block;
-            font-size: 1.1rem;
-        }
+        
+.mvcon {
+    flex: 1 1 700px;
+    border-radius: 5px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    background-color: #fff;
+    padding: 15px;
+}
+
+.mv {
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.maintt {
+    font-size: 20px;
+    color: black;
+}
+
+.listcon {
+    flex: 1 1 350px;
+    height: 180px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    background-color: #fff;
+    padding: 15px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.list:last-child {
+    margin-bottom: 0;
+}
+
+.list.active {
+    background-color: #444;
+}
+
+.list.active .listtt {
+    color: #fff;
+}
+
+.lv {
+
+    width: 100px;
+    border-radius: 5px;
+}
+
+.listtt {
+    font-size: 17px;
+    color: #444;
+}
+
+h3 {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .maintt {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .list {
+        flex-flow: column;
+        padding-bottom: 10px;
+    }
+
+    .lv {
+        width: 100%;
+    }
+
+    .listtt {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+        {#body {#}
+        {##}
+        {#    background-image: url(/static/add2/images/tangbg.gif);#}
+        {##}
+      
     </style>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"
-      style="padding:0;background-image: url('/static/images/rwbck.jpg')">
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"style="background-image: url('/static/images/rwbck.jpg')">
 
 
-<header style="background-color: white;top:0px;">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
-         style="font-family: Raleway!important;">
-        <h1 class="my-0 mr-md-auto " style="margin-left:60px;color: #4e73df!important;"><a href="/index"
-                                                                                           style="font-weight:bold;font: 32px Raleway,-apple-system,BlinkMacSystemFont;color: #4e73df!important;"><img
-                style="width: 220px; " src="static/images/my_logo.jpg"></a></h1>
-        <nav class="my-2 my-md-0 mr-md-3">
+<div class="site-wrap" id="home-section">
 
-
-            {#                        导航栏右侧#}
-
-            {% ifequal 0 session.status %}
-                <h5><a style="color: black!important;" href="/login">注册/登录</a></h5>
-            {% endifequal %}
-            {% ifequal 1 session.status %}
-                <h5><a style="color: black!important;" class="nav-link">欢迎！{{ session.username }}</a></h5>
-                <h5><a style="color: black!important;" href="/logout" class="p-2 text-dark">退出登录</a></h5>
-
-            {% endifequal %}
-
-            <h5 style="margin-right: 120px;margin-left: 30px;"><a class="p-2 text-dark " style="color: black!important;"
-                                                                  href="/index/">返回首页</a></h5>
-
-        </nav>
-
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
     </div>
 
 
-</header>
-<section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
-         style="margin-top:-7%;margin-bottom:50px;height:380px;background-size:inherit;  background-image: url('/static/images/header.jpg');">
-    <span class="mask bg-primary alpha-7"></span>
-    <div class="spotlight-holder py-lg pt-lg-xl">
-        <div class="container d-flex align-items-center no-padding">
-            <div class="col">
-                <div class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
-                    <div class="col-7">
-                        <div class="text-center mt-5">
-                            <p style="font-family:黑体;margin-top: 85px !important;"
-                               class="lead text-white mt-3 lh-180 c-white animated" data-animation-in="fadeInUp"
-                               data-animation-delay="2500">
-                                让我们通过一部纪录片来感受中医的博大精深...
-                            </p>
-                            <h1 style="font-family: 黑体;!important;font-size: 66px;"
-                                class="heading display-4 font-weight-900 text-white mt-5 animated"
-                                data-animation-in="fadeInUp" data-animation-delay="2000">
-                                大医精诚
-                            </h1>
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+
+                <div class="site-logo">
+                    <a href="/index" class="text-black"><span class="text-primary">BianQue</span></a>
+                </div>
+
+                <div class="col-12">
+                    <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                        {#                        导航栏右侧#}
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                            {% ifequal 0 session.status %}
+                                <li><a href="/login" class="nav-link">注册/登录</a></li>
+                            {% endifequal %}
+                            {% ifequal 1 session.status %}
+                                <li><a class="nav-link">欢迎！{{ session.username }}</a></li>
+                                <li><a href="/logout" class="nav-link">退出登录</a></li>
+
+                            {% endifequal %}
+                            <li><a href="/index" class="nav-link">返回首页</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+                                                                       class="site-menu-toggle py-5 js-menu-toggle text-black"><span
+                        class="icon-menu h3"></span></a></div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="site-section-cover overlay inner-page bg-light"
+         style="background-image: url('/static/images/medicine1.jpg')" data-aos="fade">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-10">
+
+                    <div class="box-shadow-content">
+                        <div class="block-heading-1">
+                            <span class="d-block mb-3 text-white"
+                                  data-aos="fade-up">跟随纪录片感受东方医学是如何一步步走向世界舞台</span>
+                            <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">大医精诚</h1>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-</section>
 
+{#video#}
 
+<div >
 <!-- 视频播放 -->
-<div class="container" style="margin-bottom: 80px">
+<div class="container11" style="margin-bottom: 80px">
     <!-- 1 -->
     <div class="mvcon">
-        <video src="/static/ttttt/img/v1.mp4" autoloop loop controls class="mv">
+        <video src="/static/ttttt/img/v1.mp4" autobuffer autoloop loop controls class="mv">
 
         </video>
         <h3 class="maintt">我们的中医药</h3>
@@ -226,7 +338,97 @@
 
 </div>
 
+</div>
 
+
+
+
+    {#底部黑块#}
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="footer-heading mb-4">关于我们</h2>
+                            <p>
+                                我是来自江苏大学的张文洋。如有需要，可以通过上边的“联系我”或者直接向3233005441@qq.com给我发送邮件哦！</p>
+                        </div>
+                        <div class="col-md-4 ml-auto">
+                            <h2 class="footer-heading mb-4">友情链接</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">中华扁鹊网</a></li>
+                                <li><a href="https://www.zhzyw.com/">中医中药网</a></li>
+                                <li><a href="https://www.cacm.org.cn/">中华中医药协会</a></li>
+                                <li><a href="https://zhongyigen.com/#">中医智库网</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 ml-auto">
+
+                    <form action="/subscribe/" method="post" class="footer-suscribe-form">
+                        {% csrf_token %}
+                        <div class="mb-5">
+                            <h2 class="footer-heading mb-4">订阅我的更新！</h2>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                       placeholder="输入电子邮箱..." aria-label="Enter Email"
+                                       aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary text-white" type="submit" id="button-addon2">
+                                        订阅
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            <!-- Link back to cssmoban can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; 2024/2/6 JSU
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/jquery.waypoints.min.js"></script>
+<script src="/static/js/jquery.animateNumber.min.js"></script>
+<script src="/static/js/jquery.fancybox.min.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
+<script src="/static/js/aos.js"></script>
+
+<script src="/static/js/main.js"></script>
 <script src="/static/ttttt/js/video.js"></script>
+
 </body>
+
 </html>

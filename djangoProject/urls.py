@@ -14,11 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse, render
 
 from django.urls import path
 from medicine import views
-
+def test(request):
+    return render(request, 'test.html', {'session': request.session})
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
@@ -37,6 +38,7 @@ urlpatterns = [
     path('recommend/', views.recommend),
     path('blogarticle/', views.blogarticle),
     path('doctor/', views.doctor),
-    path('history', views.history),
-    path('vedio', views.vedio),
+    path('history/', views.history),
+    path('vedio/', views.vedio),
+    path('test/', test),
 ]
