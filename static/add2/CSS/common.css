@@ -1,16 +1,16 @@
-/*初始化*/
-/*body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {*/
-/*    margin: 0;*/
-/*    padding: 0*/
-/*}*/
+初始化
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
 
-/*body {*/
-/*    font: 12px "宋体", "Arial Narrow", HELVETICA;*/
-/*    -webkit-text-size-adjust: 100%;*/
-/*    background-image: url(../images/tangbg.gif);*/
-/*    overflow: scroll;*/
-/*    overflow-x: hidden;*/
-/*}*/
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    -webkit-text-size-adjust: 100%;
+    background-image: url(../images/tangbg.gif);
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
 a {
     color: #2d374b;
